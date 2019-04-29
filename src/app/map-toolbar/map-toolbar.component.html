@@ -24,12 +24,12 @@
                      (onClick)="drawPolygon()">
   </ac-toolbar-button>
   <ac-toolbar-button matTooltip="Draw Polyline" matTooltipPosition="right"
-                     [iconUrl]="'assets/Polyline.svg'"
+                     [iconUrl]="'assets/polygon.svg'"
                      (onClick)="drawPolyline()">
   </ac-toolbar-button>
   <range-and-bearing #rangeAndBearing></range-and-bearing>
   <circles-editor></circles-editor>
   <ellipses-editor></ellipses-editor>
-  <polygons-editor></polygons-editor>
+  <app-test-polygons-editor></app-test-polygons-editor>
   <polylines-editor></polylines-editor>
 </ac-toolbar>

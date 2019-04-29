@@ -5,11 +5,11 @@ import { HippodromeEditorService,
   CesiumService,
   CirclesEditorService,
   CameraService,
-  PolygonsEditorService,
   PolylinesEditorService,
   PolylineEditorObservable,
   RangeAndBearingComponent
 } from 'angular-cesium';
+import { TestPolygonsEditorService } from '../Services/test-polygons-editor.service';
 
 @Component({
   selector: 'app-map-toolbar',
@@ -18,7 +18,7 @@ import { HippodromeEditorService,
   providers: [ZoomToRectangleService,
     CirclesEditorService,
     EllipsesEditorService,
-    PolygonsEditorService,
+    TestPolygonsEditorService,
     HippodromeEditorService,
     PolylinesEditorService],
 })
@@ -33,7 +33,7 @@ export class MapToolbarComponent implements OnInit {
     private cesiumService: CesiumService,
     private circlesEditor: CirclesEditorService,
     private ellipsesEditor: EllipsesEditorService,
-    private polygonsEditor: PolygonsEditorService,
+    private polygonsEditor: TestPolygonsEditorService,
     private hippodromesEditor: HippodromeEditorService,
     private polylinesEditor: PolylinesEditorService,
   ) {
